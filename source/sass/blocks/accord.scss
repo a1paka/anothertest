@@ -1,0 +1,71 @@
+.accord input {
+  display: none;
+}
+
+.accord-content {
+  display: none;
+}
+
+.accord input:checked ~ .accord-content {
+  display: block;
+}
+
+.accord .accord-content p {
+  width: 250px;
+  margin: 16px 0 0 0;
+}
+
+.accord label {
+  cursor: pointer;
+  font-weight: 700;
+  display: block;
+  margin: 9px 0 -2px;
+  padding: 0;
+
+  &::before {
+    content: "";
+    float: right;
+    width: 19px;
+    height: 13px;
+    background: url("../img/arrow-down.svg") 0 0 no-repeat;
+    margin-top: 5px;
+  }
+}
+
+.accord input:checked + label:before {
+  transition: transform .35s;
+  transform: rotate(180deg);
+}
+
+.accord input:checked + label + .accord-content {
+  height: auto;
+  color: $main-color;
+}
+
+.accord input:checked + label {
+  color: #00C368;
+}
+
+// по мобильному макету отступы неровные (фича!)
+.accord {
+  &__one {
+    padding: 0;
+    border-bottom: 1px solid #E7EBF0;
+  }
+  &__two {
+    padding: 8px 0 18px 0;
+    border-bottom: 1px solid #E7EBF0;
+  }
+  &__three {
+    padding-top: 7px;
+    border-bottom: 1px solid #E7EBF0;
+  }
+  &__four {
+    padding-top: 6px;
+    border-bottom: 1px solid #E7EBF0;
+  }
+  &__five {
+    margin-bottom: 8px;
+    padding: 5px 0 11px 0;
+  }
+}

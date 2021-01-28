@@ -1,0 +1,76 @@
+.slider {
+  position: relative;
+  padding: 0 16px;
+  margin-top: 15px;
+
+  &__img {
+    margin-left: 107px;
+  }
+
+  &__text {
+    width: 176px;
+    height: 57px;
+    text-align: center;
+    margin: 7px 0 0 54px;
+  }
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  font-size: 0;
+}
+
+.slick-track {
+  display: flex;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+// стилизация стрелок 
+.slider .slick-arrow.slick-prev {
+  position: absolute;
+  background: url("../img/arrow-prev.svg") 0 0 no-repeat;
+  width: 19px;
+  height: 20px;
+  left: 87px;
+  top: 218px;
+}
+
+.slider .slick-arrow.slick-next {
+  position: absolute;
+  background: url("../img/arrow-next.svg") 0 0 no-repeat;
+  width: 19px;
+  height: 20px;
+  left: 222px;
+  top: 218px;
+}
+
+// стилизация точек
+.slider .slick-dots {
+  display: flex;
+  margin: 53px 0 0 48px;
+}
+
+.slider .slick-dots li {
+  list-style: none;
+  margin-left: 12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #e7ebf0;
+}
+
+.slider .slick-dots li:nth-child(6) {
+  display: none;
+} // не до конца уверенна как сделать отображение только пяти точек, поэтому так
+
+.slider .slick-dots li.slick-active {
+  background-color: #a6abbd;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  padding: 0;
+}

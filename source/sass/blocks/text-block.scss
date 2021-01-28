@@ -1,0 +1,35 @@
+.text-block {
+  margin-top: 67px;
+  padding: 0 16px;
+  background-color: #F8FBFF;
+
+  &__header {
+    position: relative;
+    font-size: 24px;
+    line-height: 28.13px;
+    text-align: center;
+    margin: 0;
+    padding-top: 60px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 184px;
+      height: 4px;
+      background: #00C368;
+      top: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__about {
+    text-align: center;
+    line-height: 24px;
+    margin: 15px 0 0 0;
+  }
+
+  &__accord {
+    margin-top: 31px;
+  }
+}

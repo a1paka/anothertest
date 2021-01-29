@@ -33,3 +33,21 @@
     margin-top: 31px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .text-block {
+    margin-top: 0;
+
+    &__wrapper {
+      position: relative;
+      float: right;
+      width: 960px;
+    }
+
+    &__header {
+      font-size: 40px;
+      line-height: 48.66px;
+      text-align: center;
+    }
+  }
+}

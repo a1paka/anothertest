@@ -97,3 +97,59 @@
     margin-left: 3px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    padding: 62px 70px 0 84px;
+
+    &__wrapper {
+      position: relative;
+      float: left;
+      width: 960px;
+      background-color: #F5F5F5;
+    }
+
+    &__main-section {
+      margin: 0;
+    }
+
+    &__main-text-wrapper {
+      position: relative;
+      border: none;
+      box-shadow: none;
+      text-shadow: 0 rgba(0, 0, 0, 0);
+      margin-top: 45px;
+    }
+
+    &__main-text-block {
+      text-align: left;
+    }
+
+    &__main-photo {
+      display: block;
+      position: relative;
+      float: left;
+      width: 250px;
+      height: 250px;
+      top: -15px;
+      left: 89px;
+      margin: 0 0 0 52px;
+    }
+
+    &__main-text {
+      margin: 0;
+      padding: 0;
+
+      &::before {
+        top: 0;
+        left: 247px;
+      }
+  
+      &::after {
+        top: 185px;
+        right: -6px;
+        background-color: green;
+      }
+    }
+  }
+}

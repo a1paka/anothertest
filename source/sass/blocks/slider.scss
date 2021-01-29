@@ -11,7 +11,7 @@
     width: 176px;
     height: 57px;
     text-align: center;
-    margin: 7px 0 0 54px;
+    margin: 7px 0 0 58px;
   }
 }
 
@@ -73,4 +73,55 @@
 .slider .slick-dots button {
   font-size: 0;
   padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  // .slick-arrow,
+  // .slider .slick-dots,
+  // .slider .slick-track {
+  //   display: none;
+  // }
+
+  .slider {
+    &__item {
+      width: 179px;
+      height: 157.02px;
+    }
+
+    &__item:nth-child(1) {
+      position: absolute;
+      left: 682px;
+      top: 40px;
+    }
+
+    &__item:nth-child(2) {
+      position: absolute;
+      left: 962px;
+      top: 40px;
+    }
+
+    &__item:nth-child(3) {
+      position: absolute;
+      left: 1151px;
+      top: 310px;
+    }
+
+    &__item:nth-child(4) {
+      position: absolute;
+      left: 962px;
+      top: 527px;
+    }
+
+    &__item:nth-child(5) {
+      position: absolute;
+      left: 682px;
+      top: 535px;
+    }
+
+    &__item:nth-child(6) {
+      position: absolute;
+      left: 495px;
+      top: 322px;
+    }
+  }
 }

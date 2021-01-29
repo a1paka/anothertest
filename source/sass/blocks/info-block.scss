@@ -19,3 +19,48 @@
     padding: 0 16px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .info-block {
+    width: 1920px;
+    height: 942px;
+    background: url("../img/background.png") 0 0 no-repeat;
+
+    &__text {
+      position: relative;
+      font-size: 40px;
+      line-height: 47px;
+      width: 100%;
+      margin-left: 42px;
+      padding-top: 100px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+
+      &::before {
+        position: absolute;
+        content: "";
+        width: 184px;
+        height: 4px;
+        background: #00C368;
+        top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
+    &__logo {
+      position: relative;
+    }
+
+    &__logo-img {
+      position: absolute;
+      top: 340px;
+      left: 670px;
+    }
+
+    // &__slider {
+    //   display: block;
+    // }
+  }
+}

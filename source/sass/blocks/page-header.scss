@@ -1,0 +1,30 @@
+.page-header {
+  text-align: left;
+  margin: 0 auto;
+  padding: 0 16px;
+
+  &__logo-img {
+    margin: 10px 0 0 31px;
+    padding: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    height: 160px;
+    padding-left: 73px;
+
+    &__logo {
+      position: relative;
+      width: 318px;
+      float: left;
+    }
+
+    &__logo-img {
+      width: 318px;
+      height: 92.75px;
+      margin: 0;
+      padding-top: 28px;
+    }
+  }
+}

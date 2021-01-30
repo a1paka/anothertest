@@ -47,14 +47,33 @@
     &__header {
       &--feedb {
         font-size: 40px;
-        line-height: 48.66px;
+        line-height: 46.88px;
         text-align: center;
         padding: 121px 80px 0 80px;
-
         &::before {
           top: 100px;
         }
       }
+      &--accord {
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        padding: 114px 260px 0 240px;
+        &::before {
+          top: 102px;
+        }
+      }
+    }
+
+    &__about {
+      text-align: center;
+      line-height: 12px;
+      margin: 15px 0 0 0;
+    }
+
+    &__accord {
+      padding: 0 89px 180px 70px;
+      margin-top: 5px;
     }
   }
 }

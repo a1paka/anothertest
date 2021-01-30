@@ -1,27 +1,23 @@
 .feedback {
-  margin: 0;
+  display: block;
+  margin: 0 auto;
   padding: 0 16px;
 
-  &__main-section {
-    margin-top: 91px;
-  }
-
-  &__main-text-wrapper {
+  &__main-block {
     position: relative;
     border: 1px solid;
     box-shadow: 0px 8px 16px rgba(0, 195, 104, 0.24);
     border-radius: 32px;
     border-image-source: linear-gradient(318.43deg, rgba(0, 195, 104, 0.4) 0%, rgba(0, 195, 104, 0) 99.05%);
-  }
-
-  &__main-text-block{
-    text-align: center;
+    margin-top: 91px;
   }
 
   &__main-text {
+    position: relative;
     line-height: 24px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 62px 16px 0 16px;
+    text-align: center;
   
     &::before {
       position: absolute;
@@ -55,25 +51,24 @@
   &__main-sign {
     font-weight: 700;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
   }
 
 // второй блок
-  &__second-text-wrapper {
-    position: relative;
+  &__second-block {
     margin-top: 40px;
   }
 
   &__second-photo {
-    position: absolute;
-    top: -2px;
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    height: 160px;
   }
 
   &__second-text-block {
     line-height: 24px;
-    width: 196px;
-    height: 160px;
-    margin: 0 0 0 84px;
-    text-align: left;
+    margin-right: 8px;
   }
 
   &__second-sign,
@@ -82,74 +77,136 @@
   }
 
   // третий блок
-  &__third-photo {
-    position: absolute;
-    top: -2px;
-    right: -90px;
+  &__third-block {
+    line-height: 24px;
+    margin-top: 24px;
   }
 
-  &__third-text-wrapper {
+  &__third-photo {
     position: relative;
-    line-height: 24px;
-    width: 196px;
+    float: right;
     height: 160px;
-    margin-top: 23px;
-    margin-left: 3px;
+    margin-left: 9px;
+  }
+
+  &__third-text-block {
+    margin: 0 0 0 4px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .feedback {
-    padding: 62px 70px 0 84px;
+    position: relative;
+    float: left;
+    background-color: #F5F5F5;
+    width: 960px;
+    padding: 0 0 60px 0;
 
-    &__wrapper {
-      position: relative;
-      float: left;
-      width: 960px;
-      background-color: #F5F5F5;
+    &__blocks {
+      width: 800px;
     }
 
-    &__main-section {
-      margin: 0;
-    }
-
-    &__main-text-wrapper {
-      position: relative;
+    &__main-block {
       border: none;
       box-shadow: none;
-      text-shadow: 0 rgba(0, 0, 0, 0);
-      margin-top: 45px;
+      margin: 45px 0 0 0;
     }
 
     &__main-text-block {
-      text-align: left;
+      padding: 0 73px 0 103px;
+    }
+
+    &__main-pic {
+      display: block;
+      width: 245px;
+      height: 245px;
     }
 
     &__main-photo {
-      display: block;
       position: relative;
       float: left;
-      width: 250px;
-      height: 250px;
-      top: -15px;
-      left: 89px;
-      margin: 0 0 0 52px;
+      top: -10px;
+      left: 85px;
+      margin-left: 39px;
     }
 
     &__main-text {
+      border: none;
+      box-shadow: none;
+      text-shadow: none;
+      text-align: left;
       margin: 0;
       padding: 0;
 
       &::before {
         top: 0;
-        left: 247px;
+        left: 228px;
+        background-color: green;
       }
   
       &::after {
-        top: 185px;
-        right: -6px;
+        top: 186px;
+        right: -10px;
         background-color: green;
       }
+    }
+
+    &__main-sign {
+      text-shadow: none;
+      text-align: left;
+    }
+
+    &__blocks {
+      position: relative;
+      display: block;
+      margin: 100px 0 0 0;
+      padding: 0 0 0 130px;
+    }
+
+// второй блок
+    &__second-block {
+      clear: left;
+      float: left;
+      width: 367px;
+    }
+
+    &__second-photo {
+      position: relative;
+      float: right;
+      width: 125px;
+      height: 125px;
+      top: -13px;
+      left: -5px;
+    }
+    
+    &__second-pic {
+      width: 125px;
+      height: 125px;
+    }
+
+    &__second-text {
+      margin: 0;
+    }
+
+// третий блок
+    &__third-block {
+      position: relative;
+      float: right;
+      width: 350px;
+      margin-right: 78px;
+    }
+
+    &__third-photo {
+      position: relative;
+      float: left;
+      margin-left: -15px;
+      top: -13px;
+      left: -10px;
+    }
+
+    &__third-pic {
+      width: 125px;
+      height: 125px;
     }
   }
 }

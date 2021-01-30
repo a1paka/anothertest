@@ -5,18 +5,18 @@ $(document).ready(function(){
     adaptiveHeight: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1920,
-        settings: "unslick"
-      },
-      {
-        breakpoint: 320,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-      },
-      }
-    ]
+    // responsive: [
+    //   {
+    //     breakpoint: 1920,
+    //     settings: "unslick"
+    //   },
+    //   {
+    //     breakpoint: 320,
+    //     settings: {
+    //       slidesToShow: 1,
+    //       slidesToScroll: 1
+    //   },
+    //   }
+    // ]
   });
 });

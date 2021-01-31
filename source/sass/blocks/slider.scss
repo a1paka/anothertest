@@ -1,17 +1,22 @@
 .slider {
   position: relative;
   padding: 0 16px;
-  margin-top: 15px;
+  margin-top: 45px;
 
   &__img {
-    margin-left: 107px;
+    display: block;
+    margin: 0 auto;
   }
 
-  &__text {
+  &__text-block {
     width: 176px;
     height: 57px;
     text-align: center;
-    margin: 7px 0 0 55px;
+    margin: 0 auto;
+  }
+
+  &__text {
+    margin-top: 11px;
   }
 }
 
@@ -34,8 +39,8 @@
   background: url("../img/arrow-prev.svg") 0 0 no-repeat;
   width: 19px;
   height: 20px;
-  left: 87px;
   top: 218px;
+  left: 27%;
 }
 
 .slider .slick-arrow.slick-next {
@@ -43,14 +48,18 @@
   background: url("../img/arrow-next.svg") 0 0 no-repeat;
   width: 19px;
   height: 20px;
-  left: 222px;
   top: 218px;
+  left: 70%;
 }
 
 // стилизация точек
 .slider .slick-dots {
+  position: relative;
   display: flex;
-  margin: 55px 0 0 48px;
+  align-items: center;
+  justify-content: center;
+  top: 55px;
+  left: -5px;
 }
 
 .slider .slick-dots li {
@@ -76,12 +85,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  // .slick-arrow,
-  // .slider .slick-dots,
-  // .slider .slick-track {
-  //   display: none;
-  // }
-
   .slider {
     &__item {
       width: 179px;

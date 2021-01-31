@@ -5,6 +5,8 @@ $(document).ready(function(){
     adaptiveHeight: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    centerMode: true,
+    centerPadding: "0",
     // responsive: [
     //   {
     //     breakpoint: 1920,
@@ -19,4 +21,17 @@ $(document).ready(function(){
     //   }
     // ]
   });
+});
+
+window.addEventListener("resize", function() {
+  if (window.innerWidth >= 1300) {
+    $('.slider').slick('unslick');
+    sliderIsLive = false;
+  }
+  else {
+    if (sliderIsLive) {
+      $('slider').slick();
+      sliderIsLive = true;
+    }
+  }
 });

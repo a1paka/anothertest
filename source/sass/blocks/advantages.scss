@@ -1,7 +1,11 @@
-.text-block {
-  margin-top: 67px;
+.advantages {
+  margin-top: 123px;
   padding: 0 16px;
   background-color: #F8FBFF;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 80px;
+  }
 
   &__header {
     position: relative;
@@ -34,34 +38,23 @@
   }
 }
 
-@media (min-width: $desktop-width) {
-  .text-block {
-    margin-top: 0;
 
-    &__wrapper {
-      position: relative;
-      float: right;
-      width: 960px;
-    }
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-top: 0;
+    position: relative;
+    float: right;
+    width: 960px;
+    height: 100%;
+    padding: 0;
 
     &__header {
-      &--feedb {
-        font-size: 40px;
-        line-height: 46.88px;
-        text-align: center;
-        padding: 121px 80px 0 80px;
-        &::before {
-          top: 100px;
-        }
-      }
-      &--accord {
-        font-size: 40px;
-        line-height: 60px;
-        text-align: center;
-        padding: 114px 260px 0 240px;
-        &::before {
-          top: 102px;
-        }
+      font-size: 40px;
+      line-height: 60px;
+      text-align: center;
+      padding: 114px 0 0 240px;
+      &::before {
+        top: 102px;
       }
     }
 
@@ -72,7 +65,7 @@
     }
 
     &__accord {
-      padding: 0 89px 180px 70px;
+      padding: 0 89px 0 87px;
       margin-top: 5px;
     }
   }

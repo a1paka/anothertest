@@ -1,10 +1,14 @@
 .advantages {
-  margin-top: 123px;
-  padding: 0 16px;
+  display: table-header-group;
   background-color: #F8FBFF;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 80px;
+  &__wrapper {
+    margin-top: 123px;
+    padding: 0 16px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 80px;
+    }
   }
 
   &__header {
@@ -41,20 +45,25 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    margin-top: 0;
-    position: relative;
-    float: right;
+    display: table-cell;
     width: 960px;
-    height: 100%;
+    min-height: 100%;
+    margin-top: 0;
     padding: 0;
+
+    &__wrapper {
+      margin-top: 114px;
+      padding: 0;
+    }
 
     &__header {
       font-size: 40px;
       line-height: 60px;
       text-align: center;
-      padding: 114px 0 0 240px;
+      margin: 0 140px;
+      padding: 0;
       &::before {
-        top: 102px;
+        top: -10px;
       }
     }
 
@@ -66,7 +75,7 @@
 
     &__accord {
       padding: 0 89px 0 87px;
-      margin-top: 5px;
+      margin-top: 7px;
     }
   }
 }

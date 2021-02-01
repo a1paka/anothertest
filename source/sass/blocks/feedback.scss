@@ -1,11 +1,14 @@
 .feedback {
-  display: block;
-  margin: 0 auto;
-  padding: 0 16px;
+  display: table-footer-group;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 80px;
+  &__wrapper {
+    padding: 0 16px;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 80px;
+    }
   }
+
 
   &__header {
     position: relative;
@@ -121,50 +124,41 @@
 }
 
 @media (min-width: $desktop-width) {
-  .both {
-    position: relative;
-    height: 829px;
-  }
-
   .feedback {
-    position: relative;
-    float: left;
+    display: table-cell;
     background-color: #F5F5F5;
     width: 960px;
-    height: 100%;
+    min-height: 100%;
     padding: 0;
 
+    &__wrapper {
+      display: block;
+      padding: 0;
+    }
+    
     &__header {
+      display: block;
       position: relative;
       font-size: 40px;
       line-height: 46.88px;
       text-align: center;
-      padding: 89px 80px 0 80px;
+      margin: 0 90px;
+      padding: 0;
 
       &::before {
-        position: absolute;
-        content: "";
-        width: 184px;
-        height: 4px;
-        background: #00C368;
-        top: 67px;
-        left: 50%;
-        transform: translateX(-50%);
+        top: -20px;
       }
-    }
-
-    &__blocks {
-      width: 800px;
     }
 
     &__main-block {
       border: none;
       box-shadow: none;
-      margin: 50px 0 0 0;
+      margin: 50px 0 0 15px;
+      padding: 0;
     }
 
     &__main-text-block {
-      padding: 0 73px 0 103px;
+      padding: 0 73px 0 89px;
     }
 
     &__main-pic {
@@ -205,13 +199,14 @@
     &__main-sign {
       text-shadow: none;
       text-align: left;
+      margin-top: 12px;
     }
 
     &__blocks {
       position: relative;
       display: block;
-      margin: 100px 0 0 0;
-      padding: 0 0 0 130px;
+      margin: 141px 0 0 0;
+      padding: 0 30px 0 130px;
     }
 
 // второй блок
@@ -219,6 +214,7 @@
       clear: left;
       float: left;
       width: 367px;
+      margin: 0;
     }
 
     &__second-photo {
@@ -245,6 +241,7 @@
       float: right;
       width: 350px;
       margin-right: 78px;
+      margin-top: 0;
     }
 
     &__third-photo {

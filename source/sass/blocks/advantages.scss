@@ -1,8 +1,8 @@
 .advantages {
   display: table-header-group;
-  background-color: #F8FBFF;
 
   &__wrapper {
+    background-color: #F8FBFF;
     margin-top: 123px;
     padding: 0 16px;
 
@@ -46,13 +46,14 @@
 @media (min-width: $desktop-width) {
   .advantages {
     display: table-cell;
-    width: 960px;
+    background-color: #F8FBFF;
+    min-width: 50vw;
     min-height: 100%;
-    margin-top: 0;
     padding: 0;
 
     &__wrapper {
-      margin-top: 114px;
+      background-color: transparent;
+      margin-top: 0;
       padding: 0;
     }
 
@@ -61,7 +62,7 @@
       line-height: 60px;
       text-align: center;
       margin: 0 140px;
-      padding: 0;
+      padding: 0 90px;
       &::before {
         top: -10px;
       }
@@ -71,10 +72,11 @@
       text-align: center;
       line-height: 12px;
       margin: 15px 0 0 0;
+      padding: 0 87px;
     }
 
     &__accord {
-      padding: 0 89px 0 87px;
+      padding: 0 167px 0 87px;
       margin-top: 7px;
     }
   }

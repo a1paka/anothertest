@@ -9,7 +9,6 @@
     }
   }
 
-
   &__header {
     position: relative;
     font-size: 24px;
@@ -127,7 +126,7 @@
   .feedback {
     display: table-cell;
     background-color: #F5F5F5;
-    width: 960px;
+    min-width: 50vw;
     min-height: 100%;
     padding: 0;
 
@@ -142,7 +141,7 @@
       font-size: 40px;
       line-height: 46.88px;
       text-align: center;
-      margin: 0 90px;
+      margin: 120px 90px 0 90px;
       padding: 0;
 
       &::before {

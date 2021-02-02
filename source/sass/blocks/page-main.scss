@@ -6,7 +6,7 @@
   
   &__block-logo {
     display: block;
-    margin-top: 24px;
+    margin-top: 20px;
     padding: 0;
   }
   
@@ -29,6 +29,7 @@
 
   &__secondary-blocks-wrapper {
     display: table-row;
+    width: 100%;
   }
 }
 
@@ -38,7 +39,11 @@
       width: 100%;
       height: 942px;
       margin: 0 auto;
-      background: url("../img/background.png") 0 0 no-repeat;
+      background: url("../img/background@1x.png") 0 0 no-repeat;
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background: url("../img/background@2x.png") 0 0 no-repeat;
+      }
     }
   
     &__block-logo {
@@ -48,9 +53,9 @@
   
     &__logo-img {
       position: absolute;
-      width: 640px;
-      top: 360px;
-      left: 35%;
+      width: 600px;
+      top: 400px;
+      left: 35.6%;
     }
     
     &__text {
@@ -74,6 +79,7 @@
     }
 
     &__secondary-blocks-wrapper {
+      width: 100%;
       height: 829px;
     }
   }

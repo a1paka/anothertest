@@ -31,8 +31,8 @@
     <section class="page-main__info-block">
       <div class="page-main__block-logo">
         <picture>
-          <source media="(min-width: 1300px)" srcset="img/berry-desktop@1x.webp 1x, img/berry-desktop@2x.webp 2x">
-          <source srcset="img/berry-mobile.webp 1x, img/berry-mobile@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1300px)" srcset="img/berry-desktop@1x.webp 1x, img/berry-desktop@2x.webp 2x">
+          <source type="image/webp" srcset="img/berry-mobile.webp 1x, img/berry-mobile@2x.webp 2x">
 
           <source media="(min-width: 1300px)" srcset="img/berry-desktop@1x.png 1x, img/berry-desktop@2x.png 2x">
           <img class="page-main__logo-img" src="img/berry-mobile@1x.png" srcset="img/berry-mobile@2x.png 2x" alt="Лого-брусника">
@@ -88,7 +88,10 @@
             <div class="feedback__main-block">
               <div class="feedback__main-text-block">
                 <div class="feedback__main-photo">
-                <img class="feedback__main-pic" src="img/photo.png" alt="Фотография пользователя">
+                  <picture>
+                    <source media="(min-width: 1300px)" srcset="img/photo-desktop.png">
+                    <img class="feedback__main-pic" src="img/photo-mobile.png" alt="Фотография пользователя">
+                  </picture>
                 </div>
                 <p class="feedback__main-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam quas, aut consectetur
                   animi  autem aliquid consequuntur suscipit exercitationem laborum cupiditate magnam eaque quae deleniti, iste nisi

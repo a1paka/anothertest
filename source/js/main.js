@@ -7,19 +7,6 @@ $(document).ready(function(){
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: "0",
-    // responsive: [
-    //   {
-    //     breakpoint: 1920,
-    //     settings: "unslick"
-    //   },
-    //   {
-    //     breakpoint: 320,
-    //     settings: {
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1
-    //   },
-    //   }
-    // ]
   });
 });
 

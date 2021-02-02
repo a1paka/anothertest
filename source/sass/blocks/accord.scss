@@ -10,10 +10,10 @@
   display: block;
 }
 
-.accord .accord-content p {
-  width: 250px;
-  margin: 16px 0 0 0;
-}
+// .accord .accord-content p {
+//   width: 250px;
+//   margin: 16px 0 0 0;
+// }
 
 .accord label {
   cursor: pointer;
@@ -82,6 +82,7 @@
   .accord label {
     font-size: 24px;
     line-height: 28px;
+    width: 100%;
 
     &::before {
       background: url("../img/arrow-down.svg") 0 0 no-repeat;
@@ -90,6 +91,8 @@
   }
 
   .accord {
+    position: relative;
+    float: right;
     &__item {
       &:nth-child(1) {
         padding-top: 18px;
@@ -110,10 +113,5 @@
       margin-right: 25px;
       top: 4px;
     }
-  }
-
-  .accord .accord-content p {
-    width: 560px;
-    margin: 17px 0 0 65px;
   }
 }

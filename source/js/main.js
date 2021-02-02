@@ -10,15 +10,9 @@ $(document).ready(function(){
   });
 });
 
-window.addEventListener("resize", function() {
-  if (window.innerWidth >= 1300) {
+window.addEventListener("resize", function () {
+  var withWindow = window.innerWidth;
+  if (withWindow > 1300) {
     $('.slider').slick('unslick');
-    sliderIsLive = false;
-  }
-  else {
-    if (sliderIsLive) {
-      $('slider').slick();
-      sliderIsLive = true;
-    }
   }
 });
